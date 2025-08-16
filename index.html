@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CSS Basics & The Box Model</title>
+  <!-- Link to external stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1>CSS Basics &amp; The Box Model</h1>
+      <p class="tagline">Practice selectors, spacing, and layout—no JS, no libraries.</p>
+      <a class="btn" href="#cards">See Examples</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="intro" class="section">
+      <h2>What You're Seeing</h2>
+      <p>
+        This page demonstrates core CSS concepts: typography, colors, spacing, and the box model.
+        Inspect elements in your browser DevTools to see margins, borders, and padding.
+      </p>
+    </section>
+
+    <section id="cards" class="section">
+      <h2>Card Layout (Grid)</h2>
+      <p class="muted">Each card uses margin, padding, and borders. Resize the window to see the responsive grid.</p>
+      <div class="cards">
+        <article class="card">
+          <h3>Headings &amp; Paragraphs</h3>
+          <p>
+            Styling text with selectors like <code>body</code>, <code>h1</code>, and <code>p</code>.
+            Adjust <code>font-size</code>, <code>line-height</code>, and <code>color</code> for readability.
+          </p>
+          <a class="btn btn-outline" href="#box-demo">Go to Box Model Demo</a>
+        </article>
+
+        <article class="card">
+          <h3>Backgrounds</h3>
+          <p>
+            Use <code>background</code>, <code>background-color</code>, and <code>background-image</code>
+            to add visual separation between sections.
+          </p>
+          <button class="btn">Primary Button</button>
+        </article>
+
+        <article class="card">
+          <h3>Borders</h3>
+          <p>
+            Borders visually define edges of elements. Combine with padding to create pleasing spacing.
+          </p>
+          <div class="sample-border">Border + Padding area</div>
+        </article>
+      </div>
+    </section>
+
+    <section id="box-demo" class="section">
+      <h2>Box Model Demo</h2>
+      <p class="muted">
+        The total space an element occupies = <strong>margin</strong> (outside) + <strong>border</strong> + <strong>padding</strong> + <strong>content box</strong>.
+      </p>
+
+      <div class="demo-grid">
+        <div class="demo content-box">
+          <strong>content-box</strong>
+          <p>Width is for content only. Border &amp; padding add to total size.</p>
+        </div>
+
+        <div class="demo border-box">
+          <strong>border-box</strong>
+          <p>Total width includes padding and border. Easier for layouts.</p>
+        </div>
+
+        <div class="demo spacing-demo">
+          <strong>Spacing</strong>
+          <p>Try tweaking <code>margin</code>, <code>padding</code>, and <code>border</code> values.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>&copy; 2025 Your Name — CSS Basics Assignment</small>
+    </div>
+  </footer>
+</body>
+</html>
